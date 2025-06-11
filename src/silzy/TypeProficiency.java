@@ -1,17 +1,19 @@
 package silzy;
 
 public enum TypeProficiency {
-    NOVICE("Novice", 1),
-    APPRENTICE("Apprentice", 2),
-    EXPERT("Expert", 4),
-    MASTER("Master", 6);
+    NOVICE("Novice", 1, 2),
+    APPRENTICE("Apprentice", 2, 4),
+    EXPERT("Expert", 4, 8),
+    MASTER("Master", 6, 12);
 
     private final String proficiencyName;
     private final float proficiencyDmgAdd;
+    private final float proficiencyHealthAdd;
 
-    TypeProficiency(String name, int dmgAdd) {
+    TypeProficiency(String name, float dmgAdd, int healthAdd) {
         this.proficiencyName = name;
         this.proficiencyDmgAdd = dmgAdd;
+        this.proficiencyHealthAdd = healthAdd;
     }
 
     public String getProficiencyName() {
@@ -20,5 +22,9 @@ public enum TypeProficiency {
 
     public float getProficiencyDmgAdd() {
         return proficiencyDmgAdd;
+    }
+
+    public float getProficiencyHealthAdd() {
+        return proficiencyHealthAdd;
     }
 }
