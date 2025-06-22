@@ -11,11 +11,14 @@ public class Main {
         *
         * To Do List (□▣) :
         * □ Implement/ Finish Fighting system (take damage, deal damage, diff attacks, etc.)
+        * □ Implement more stats (mana, stamina, Intelligence, defence, maybe more?)
+        * □ Implement type specific skills (e.g. healing skill for healers)
+        * □ Balancing
         * □ Allow character creation through the console (parsing in info to create new char.)
         * □ Make new Races/Species besides Humanoid
         * ▣ Maybe rework str and hp calculation (use less magic numbers)
         * ▣ Add leveling system (automated exp caps and automated level ups)
-        * □
+        * □ Add error handling
         * □
         * □
         * □
@@ -29,7 +32,7 @@ public class Main {
         *       ↳ birthDay() // Ages the character by one year
         *       ↳ proficiencyUp() // 'Upgrades' a characters type/class proficiency
         *       ↳ addLevels(int levelsToAdd) // Level's up a character by a set amount if the factor is greater than one, else it'll level up by one level // doesn't change the exp cap or value
-        *       ↳ addExperience(double experienceToAdd) // Adds a set amount of experience (736797 is needed for the max level)
+        *       ↳ addExperience(double experienceToAdd) // Adds a set amount of experience
         *       ↳ fastAttack() // Basic attack, deals less damage but is fast (attack speed is not implemented yet)
         *       ↳ strongAttack() // Basic attack, deals more damage but is slow (attack speed is not implemented yet)
         *       ↳ block() // NOT IMPLEMENTED YET

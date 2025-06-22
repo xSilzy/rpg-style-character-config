@@ -31,13 +31,13 @@ public abstract class Humanoid implements IMovesets{
     }
 
     protected void setBaseStrength(int level){
-        double BASE_STRENGTH_STARTING_MULTIPLIER = 1;
-        double STRENGTH_MULTIPLIER = 0.5;
+        final double BASE_STRENGTH_STARTING_MULTIPLIER = 1;
+        final double STRENGTH_MULTIPLIER = 0.5;
         this.baseStrength = Math.round((race.getRaceBaseDmg() + type.getTypeDmgAdd() + proficiency.getProficiencyDmgAdd() * BASE_STRENGTH_STARTING_MULTIPLIER + (level * STRENGTH_MULTIPLIER)));
     }
     protected void setBaseHealth(int level){
-        double BASE_HEALTH_STARTING_MULTIPLIER = 1;
-        double HEALTH_MULTIPLIER = 1.5;
+        final double BASE_HEALTH_STARTING_MULTIPLIER = 1;
+        final double HEALTH_MULTIPLIER = 1.5;
         this.baseHealth = Math.round((race.getRaceBaseHealth() + type.getTypeHealthAdd() + proficiency.getProficiencyHealthAdd() * BASE_HEALTH_STARTING_MULTIPLIER + (level * HEALTH_MULTIPLIER)));
 //
     }
