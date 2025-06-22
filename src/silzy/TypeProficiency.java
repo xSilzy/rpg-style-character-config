@@ -1,10 +1,10 @@
 package silzy;
 
 public enum TypeProficiency {
-    NOVICE("Novice", 1, 2),
-    APPRENTICE("Apprentice", 2, 4),
-    EXPERT("Expert", 4, 8),
-    MASTER("Master", 6, 12);
+    NOVICE("Novice", 0, 2),
+    APPRENTICE("Apprentice", 4, 8),
+    EXPERT("Expert", 16, 32),
+    MASTER("Master", 64, 128);
 
     private final String proficiencyName;
     private final float proficiencyDmgAdd;
