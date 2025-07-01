@@ -8,6 +8,7 @@ public class Human extends Humanoid {
         this.setExperienceCap(Race.HUMAN.getBaseExperienceCap());
         this.setBaseStrength(level);
         this.setBaseHealth(level);
+        this.setBaseAttackSpeed(Race.HUMAN.getRaceBaseAttackSpeed());
     }
 
 }

@@ -8,6 +8,8 @@ public class DarkElf extends Humanoid {
         this.setExperienceCap(Race.DARK_ELF.getBaseExperienceCap());
         this.setBaseStrength(level);
         this.setBaseHealth(level);
+        this.setBaseAttackSpeed(Race.DARK_ELF.getRaceBaseAttackSpeed());
+
     }
 
 

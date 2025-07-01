@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         /* --- RPG STYLE CHARACTER CREATOR ---
         * A little project I made to get more familiar with Java and its different features (Classes/ Subclasses, Enums, Interfaces etc.)
         *
@@ -49,34 +49,26 @@ public class Main {
         *
         *  The following is an example on how to create a new Human:
         * */
+
         List<Humanoid> allHumanoids = new ArrayList<>();
 
 
-        Humanoid theHuman = new Human("theHuman", 18,Gender.MALE, Type.WARRIOR, TypeProficiency.NOVICE, 10);
-        allHumanoids.add(theHuman);
+        Humanoid john = new Human("John", 51,Gender.MALE, Type.BRUTE, TypeProficiency.MASTER, 1);
+        allHumanoids.add(john);
+        john.simpleInfoDump();
 
-        Humanoid theElf = new Elf("theElf", 18,Gender.MALE, Type.WARRIOR, TypeProficiency.NOVICE, 10);
-        allHumanoids.add(theElf);
-
-        Humanoid theDarkElf = new DarkElf("theDarkElf", 18,Gender.MALE, Type.WARRIOR, TypeProficiency.NOVICE, 10);
-        allHumanoids.add(theDarkElf);
-
-        Humanoid theOrk = new Ork("theOrk", 18,Gender.MALE, Type.WARRIOR, TypeProficiency.NOVICE, 10);
-        allHumanoids.add(theOrk);
-
-        Humanoid theDwarf = new Dwarf("theDwarf", 18,Gender.MALE, Type.WARRIOR, TypeProficiency.NOVICE, 10);
-        allHumanoids.add(theDwarf);
+        Humanoid fred = new Human("Fred", 51,Gender.MALE, Type.BRUTE, TypeProficiency.MASTER, 1);
+        allHumanoids.add(fred);
+        fred.simpleInfoDump();
 
 
-
-
-        for (Humanoid currentHumanoid : allHumanoids) {
-            System.out.println("\n---\n");
-            currentHumanoid.addExperience(736807);
-            currentHumanoid.simpleInfoDump();
-
-        }
-
+        john.strongAttack(fred);
+        wait(3 - 1.0);
+        john.fastAttack(fred);
+        wait(3 - 1.0);
+        john.fastAttack(fred);
+        wait(3 - 1.0);
+        john.fastAttack(fred);
 
 
 
@@ -84,4 +76,10 @@ public class Main {
 
 
     }
+
+    public static void wait (double waitTime) throws InterruptedException {
+        waitTime *= 1000;
+        Thread.sleep((long) waitTime);
+    }
+
 }

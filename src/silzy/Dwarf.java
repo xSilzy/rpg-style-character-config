@@ -8,6 +8,7 @@ public class Dwarf extends Humanoid {
         this.setExperienceCap(Race.DWARF.getBaseExperienceCap());
         this.setBaseStrength(level);
         this.setBaseHealth(level);
+        this.setBaseAttackSpeed(Race.DWARF.getRaceBaseAttackSpeed());
 
 
     }

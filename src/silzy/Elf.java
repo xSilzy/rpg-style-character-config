@@ -8,6 +8,8 @@ public class Elf extends Humanoid {
         this.setExperienceCap(Race.ELF.getBaseExperienceCap());
         this.setBaseStrength(level);
         this.setBaseHealth(level);
+        this.setBaseAttackSpeed(Race.ELF.getRaceBaseAttackSpeed());
+
     }
 
 }

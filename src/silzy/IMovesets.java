@@ -3,15 +3,10 @@ package silzy;
 public interface IMovesets {
 
 
-    void fastAttack();
-    void strongAttack();
-    void block();
-    void dodge();
+    void fastAttack(Humanoid target);
 
-    void walk();
-    void run();
-    void sneak();
-    void climb();
+    void strongAttack(Humanoid target);
+
 
 
 }

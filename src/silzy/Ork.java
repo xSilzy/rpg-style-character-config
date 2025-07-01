@@ -8,6 +8,7 @@ public class Ork extends Humanoid {
         this.setExperienceCap(Race.ORK.getBaseExperienceCap());
         this.setBaseStrength(level);
         this.setBaseHealth(level);
+        this.setBaseAttackSpeed(Race.ORK.getRaceBaseAttackSpeed());
     }
 
 
